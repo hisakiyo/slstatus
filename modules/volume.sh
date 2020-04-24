@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# Prints the current volume or 🔇 if muted. Uses PulseAudio by default,
-# uncomment the ALSA lines if you remove PulseAudio.
-
 volstat="$(amixer get Master)" # ALSA only equivalent.
 
 echo "$volstat" | grep "\[off\]" >/dev/null && printf "🔇\\n" && exit # ALSA

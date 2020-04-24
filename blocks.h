@@ -2,6 +2,7 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 	{"", "modules/music.sh",                                          	1,              8},
+	{"", "modules/news.sh",							60,		0},
 	{"", "modules/torrent.sh",						20,		0},	
 	{"", "modules/pacpackages.sh",						30,		0},
 	

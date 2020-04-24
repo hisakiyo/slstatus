@@ -16,12 +16,3 @@ transmission-remote -l | grep % |
 				s/N/✅/g;
 				s/Z/🌱/g" | awk '{print $2, $1}' | sed -e "s/ $//g" | tr '\n' ' '
 
-case $BLOCK_BUTTON in
-    1) $TERMINAL -e transmission-remote-cli ;;
-    3) notify-send "Torrent module" "🛑: paused
-⏳: idle (seeds needed)
-🔼: uploading (unfinished)
-🔽: downloading
-✅: done
-🌱: done and seeding" ;;
-esac
